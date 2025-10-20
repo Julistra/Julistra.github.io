@@ -1,5 +1,20 @@
+/* Two-column layout for lists or blocks
+   Created by Julistra — https://Julistra.github.io
+   Last updated: 2025-10-19
+*/
 .two-col {
   column-count: 2;
   column-gap: 2rem;
+  list-style-position: inside; /* optional, for nice alignment */
+  padding-left: 0;
 }
-.two-col li { break-inside: avoid; -webkit-column-break-inside: avoid; -moz-column-break-inside: avoid; }
+.two-col li { 
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+}
+.two-col p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
